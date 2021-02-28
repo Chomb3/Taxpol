@@ -1,1 +1,1 @@
-# spiel
+# Repo sobre paquetes para juego
