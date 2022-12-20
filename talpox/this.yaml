@@ -1,0 +1,38 @@
+module: terraform-google-datacatalog
+submodule: modules/taxonomy
+version: feature/DPLDEV-430
+
+taxonomies:
+
+  ### Taxonomia y Policy Tag
+  - display_name: "Taxonomy_Test1"
+    region: "us"
+    description: "Only creating taxonomy"
+    activated_policy_types:  ["FINE_GRAINED_ACCESS_CONTROL"]
+    taxonomy: "Test1_Taxonomy"
+
+
+policies:
+  
+  - display_name: "Policy1"
+    policy_description: "Policy Description"
+
+  - display_name: "Policy2"
+    policy_description: "Policy Description 2"  
+      #taxid: 386076794871447394
+
+
+
+
+#- policy_child_name: "pol_child1"
+#  parent_policy_id: "456"
+#  policy_child_description: "Child Description"
+
+# taxonomies_iam:
+# - taxonomy: ["", ""]
+#   description: "test1"
+  
+# policy_tag:
+# - display_name: "policy-1"
+#   description: "policy test1"
+#   taxonomy: ["FINE_GRAINED_ACCESS_CONTROL", ""]
